@@ -92,12 +92,22 @@ if __name__ == '__main__':
     search_engine.insert_document(
         "The medication caused a headache and nausea, but no dizziness was reported.")
     search_engine.create_inverted_index()
-    search_engine.rank_documents("nausea and dizziness")  # query 1
+
+    # query 1
+    search_engine.rank_documents("nausea and dizziness")
     print()
-    search_engine.rank_documents("effects")              # query 2
+
+    # query 2
+    search_engine.rank_documents("effects")
     print()
-    search_engine.rank_documents("nausea was reported")  # query 3
+
+    # query 3
+    search_engine.rank_documents("nausea was reported")
     print()
-    search_engine.rank_documents("dizziness")            # query 4
+
+    # query 4
+    search_engine.rank_documents("dizziness")
     print()
-    search_engine.rank_documents("the medication")       # query 5
+
+    # query 5
+    search_engine.rank_documents("the medication")
